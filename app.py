@@ -16,7 +16,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 def main():
     
     st.markdown("<h1 class='header-text'> Urdu Voice Chatbot</h1>", unsafe_allow_html=True)
-    st.subheader('"اردو وائس باٹ" ', divider='#0000FF')
+    st.subheader('"اردو وائس باٹ" ', divider='blue')
 
     st.sidebar.write("AI & Machine Learning Expert")
 
