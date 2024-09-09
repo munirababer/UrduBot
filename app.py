@@ -24,7 +24,7 @@ def main():
     with st.container():
         st.markdown('<div class="audio-recorder-container">', unsafe_allow_html=True)
     # Audio recorder for Urdu input
-    audio_data = audio_recorder(text='آاوار ریکارڈ کروائیں', icon_size="2x", icon_name="microphone-lines", key="urdu_recorder")
+    audio_data = audio_recorder(text='آواز ریکارڈ کروائیں', icon_size="2x", icon_name="microphone-lines", key="urdu_recorder")
     st.markdown('</div>', unsafe_allow_html=True)
 
     if audio_data is not None:
