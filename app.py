@@ -17,17 +17,14 @@ def main():
     
     st.markdown("<h1 class='header-text'> Urdu Voice Chatbot</h1>", unsafe_allow_html=True)
     st.subheader('"اردو وائس باٹ" ', divider='blue')
-
-    st.sidebar.write("AI & Machine Learning Expert")
-
-    st.sidebar.header("اردو چیت باٹ", divider='rainbow')
+    st.sidebar.header("اردو چیت باٹ", divider='blue')
     st.sidebar.write('''یہ ایک اردو وائس چیٹ بوٹ ہے۔ اس میں اردو وائس ان پٹ لیتا ہے اور اردو ٹیکسٹ کے ساتھ اردو آواز میں جواب دیتا ہے۔ ''')
 
    
     with st.container():
         st.markdown('<div class="audio-recorder-container">', unsafe_allow_html=True)
     # Audio recorder for Urdu input
-    audio_data = audio_recorder(text='بولیۓ', icon_size="2x", icon_name="microphone-lines", key="urdu_recorder")
+    audio_data = audio_recorder(text='آاوار ریکارڈ کرواعیں', icon_size="2x", icon_name="microphone-lines", key="urdu_recorder")
     st.markdown('</div>', unsafe_allow_html=True)
 
     if audio_data is not None:
