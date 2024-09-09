@@ -36,7 +36,6 @@ def main():
 
             with col2:
                 # Display the recorded audio file
-                st.markdown('<h2 class="avatar">🧑</h2>', unsafe_allow_html=True)
                 st.audio(audio_data)
                 
                 # Save the recorded audio to a temporary file
@@ -72,7 +71,7 @@ def convert_audio_to_text(audio_file_path):
             text = recognizer.recognize_google(audio_data, language="ur")
             return text
         except sr.UnknownValueError:
-            return "آپ کی آواز واضح نہیں ہے"
+            return "آپ کی آواز نہیں ہے"
         except sr.RequestError:
             return "Sorry, my speech service is down"
 
