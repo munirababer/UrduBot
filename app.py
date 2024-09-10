@@ -89,7 +89,7 @@ def encode_audio_to_base64(file_path):
     return base64.b64encode(audio_bytes).decode()
 
 def get_llm_response(text, retries=3, delay=5):
-    prompt = f"""Kindly answer this question in Urdu language. 
+    prompt = f"""Your name is 'Bolta Dost'.Kindly answer this question in Urdu language. 
     Don't use any other language or characters from other languages.
     Use some Urdu words at the beginning and end of your answer related to the question. 
     Keep your answer short. 
