@@ -83,10 +83,7 @@ def convert_text_to_audio(text, lang='ur'):
     except Exception as e:
         st.error(f"Error converting text to audio: {e}")
 
-def encode_audio_to_base64(file_path):
-    with open(file_path, "rb") as audio_file:
-        audio_bytes = audio_file.read()
-    return base64.b64encode(audio_bytes).decode()
+
 
 def get_llm_response(text, retries=3, delay=5):
     prompt = f"""Your name is 'Bolta Dost'.Kindly answer this question in Urdu language. 
