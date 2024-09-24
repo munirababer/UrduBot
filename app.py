@@ -9,7 +9,7 @@ import google.generativeai as genai
 import time
 
 # Retrieve API key from Streamlit secrets
-GEMINI_API_KEY = "AIzaSyBL_-rinB4ETEWmbYrka8pSEyihtqCQgd0"
+GEMINI_API_KEY = "A"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Main function
